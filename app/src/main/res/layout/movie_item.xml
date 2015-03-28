@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp">
+
+    <ImageView
+        android:id="@+id/image_movie"
+        android:layout_width="109dp"
+        android:layout_height="160dp"
+        android:src="@color/material_blue_grey_800"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="117dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/abc_text_size_headline_material"
+            android:text="The Greatest Movie"
+        />
+
+        <TextView
+            android:id="@+id/text_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:text="Andy Lau, Cecilia Cheung"
+        />
+
+        <TextView
+            android:id="@+id/text_theater_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Seasons City"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:textColor="@android:color/primary_text_light"
+        />
+
+        <TextView
+            android:id="@+id/text_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:25"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:textColor="@android:color/primary_text_light"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_watched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sudah Nonton"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_alignTop="@id/button_watched"
+                android:layout_toEndOf="@id/button_watched"
+                android:layout_toRightOf="@id/button_watched"
+                android:text="Detail" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
